@@ -93,6 +93,7 @@ public class StudentsController : Controller
         {
             return NotFound();
         }
+
         return View(student);
     }
 
@@ -113,6 +114,7 @@ public class StudentsController : Controller
             try
             {
                 _context.Update(student);
+                await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -145,6 +147,7 @@ public class StudentsController : Controller
             return NotFound();
         }
 
+
         return View(student);
     }
 
@@ -157,6 +160,7 @@ public class StudentsController : Controller
         if (student != null)
         {
             _context.Student.Remove(student);
+            await _context.SaveChanges();
         }
 
         return RedirectToAction(nameof(Index));
