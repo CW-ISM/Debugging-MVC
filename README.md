@@ -15,7 +15,7 @@ do not scaffold a new controller over the existing one. We must learn to fix bug
     - The home link should go to the default page in the Home controller
     - The students link should go to the Index of the Students controller
 - Ensure all CRUD pages work and data is saved correctly to the database
-  - [ ] Ensure the index page shows a paginated list of students
-  - [ ] Ensure the edit page updates the existing student records
-  - [ ] Ensure details show the correct information for the selected record
-  - [ ] Ensure delete removes the student from the database correctly
+  - [x] Ensure the index page shows a paginated list of students
+  - [x] Ensure the edit page updates the existing student records
+  - [x] Ensure details show the correct information for the selected record
+  - [x] Ensure delete removes the student from the database correctly
